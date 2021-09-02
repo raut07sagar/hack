@@ -17,7 +17,7 @@ box.setAttribute('class','box');
   try
   {
    
-    var data = await fetch("http://makeup-api.herokuapp.com/api/v1/products.json");
+    var data = await fetch("https://makeup-api.herokuapp.com/api/v1/products.json");
     var datares = await data.json();
     
 
