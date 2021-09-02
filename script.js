@@ -14,6 +14,9 @@ box.setAttribute('class','box');
 
  
  async function getdata(){
+  try
+  {
+   
     var data = await fetch("http://makeup-api.herokuapp.com/api/v1/products.json");
     var datares = await data.json();
     
@@ -57,6 +60,12 @@ box.setAttribute('class','box');
  document.body.append(final);
 
     }
+  }
+  catch(error)
+  {
+   console.log(error)
+  }
+
 
 }
 getdata();
